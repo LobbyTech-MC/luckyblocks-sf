@@ -13,7 +13,7 @@ public final class GiantSlimeSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Cobwebs";
+		return "蜘蛛网";
 	}
 
 	@Override

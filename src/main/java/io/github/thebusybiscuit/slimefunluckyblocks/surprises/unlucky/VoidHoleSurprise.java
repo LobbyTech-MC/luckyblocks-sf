@@ -13,7 +13,7 @@ public final class VoidHoleSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Void Hole";
+		return "黑洞";
 	}
 
 	@Override

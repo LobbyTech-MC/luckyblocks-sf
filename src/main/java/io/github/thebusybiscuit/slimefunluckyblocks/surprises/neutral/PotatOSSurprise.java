@@ -8,18 +8,18 @@ import org.bukkit.entity.Player;
 
 import io.github.thebusybiscuit.slimefunluckyblocks.surprises.LuckLevel;
 import io.github.thebusybiscuit.slimefunluckyblocks.surprises.Surprise;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.Item.CustomItem;
+import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 
 public final class PotatOSSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "PotatOS";
+		return "马铃薯";
 	}
 
 	@Override
 	public void activate(Random random, Player p, Location l) {
-		l.getWorld().dropItemNaturally(l, new CustomItem(Material.POTATO, "&e&lPotatOS"));
+		l.getWorld().dropItemNaturally(l, new CustomItem(Material.POTATO, "&e&l马铃薯"));
 	}
 
 	@Override

@@ -12,7 +12,7 @@ public final class ExplosionSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Explosion";
+		return "爆炸";
 	}
 
 	@Override

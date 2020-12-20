@@ -14,7 +14,7 @@ public final class CobwebSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Giant Slime";
+		return "巨型史莱姆";
 	}
 
 	@Override

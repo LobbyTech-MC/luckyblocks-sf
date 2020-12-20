@@ -16,7 +16,7 @@ public final class IronGolemsSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Iron Golem Invasion";
+		return "铁傀儡入侵";
 	}
 
 	@Override

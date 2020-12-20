@@ -15,7 +15,7 @@ public final class WitchSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Witch and Bats";
+		return "凋零和蝙蝠";
 	}
 
 	@Override

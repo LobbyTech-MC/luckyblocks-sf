@@ -14,7 +14,7 @@ public final class TNTRainSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "TNT Rain";
+		return "TNT雨";
 	}
 
 	@Override

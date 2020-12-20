@@ -16,7 +16,7 @@ public final class ZombiePigmenSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Angry Zombie Pigmen";
+		return "愤怒的僵尸猪人";
 	}
 
 	@Override

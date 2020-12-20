@@ -16,14 +16,14 @@ public final class FakeDiamondBlock implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Normal and Fake Diamond Block";
+		return "真假钻石块";
 	}
 
 	@Override
 	public void activate(Random random, Player p, Location l) {
 		l.getBlock().getRelative(BlockFace.UP).getRelative(BlockFace.UP).setType(Material.DIAMOND_BLOCK);
 		l.getBlock().getRelative(BlockFace.UP).setType(Material.DIAMOND_BLOCK);
-		p.sendTitle("", ChatColor.translateAlternateColorCodes('&', "&7&oOne is real, one is not..."), 10, 20, 10);
+		p.sendTitle("", ChatColor.translateAlternateColorCodes('&', "&7&o一个是真的, 一个是假的..."), 10, 20, 10);
 		BlockStorage.store(random.nextInt(10) < 5 ? l.getBlock().getRelative(BlockFace.UP): l.getBlock(), "LUCKY_BLOCK_UNLUCKY");
 	}
 

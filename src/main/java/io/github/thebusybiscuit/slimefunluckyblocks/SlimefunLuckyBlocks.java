@@ -304,7 +304,7 @@ public class SlimefunLuckyBlocks extends JavaPlugin implements SlimefunAddon {
     public static ItemStack createPotion(Color color, PotionEffect effect, boolean lucky) {
         ItemStack potion = new ItemStack(lucky ? Material.POTION : Material.SPLASH_POTION);
         PotionMeta pm = (PotionMeta) potion.getItemMeta();
-        pm.setDisplayName(ChatColors.color((lucky ? "&6Lucky" : "&cUnlucky") + " potion"));
+        pm.setDisplayName(ChatColors.color((lucky ? "&6幸运" : "&c霉运") + "药水"));
         pm.setColor(color);
         pm.addCustomEffect(effect, false);
         potion.setItemMeta(pm);

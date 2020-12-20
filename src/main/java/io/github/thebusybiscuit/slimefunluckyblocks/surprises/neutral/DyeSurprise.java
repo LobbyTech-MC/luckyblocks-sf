@@ -15,7 +15,7 @@ public final class DyeSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Dyes";
+		return "染料";
 	}
 
 	@Override
@@ -27,7 +27,7 @@ public final class DyeSurprise implements Surprise {
 		l.getWorld().dropItemNaturally(l, new ItemStack(Material.ORANGE_DYE));
 		l.getWorld().dropItemNaturally(l, new ItemStack(Material.PINK_DYE));
 		l.getWorld().dropItemNaturally(l, new ItemStack(Material.PURPLE_DYE));
-		p.sendTitle(p.getName(), ChatColor.translateAlternateColorCodes('&', " has almost &b&odyed"), 10, 20, 10);
+		p.sendTitle(p.getName(), ChatColor.translateAlternateColorCodes('&', "几乎都被 &b&o染色了"), 10, 20, 10);
 	}
 
 	@Override

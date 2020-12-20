@@ -13,14 +13,14 @@ import org.bukkit.potion.PotionEffectType;
 
 import io.github.thebusybiscuit.slimefunluckyblocks.surprises.LuckLevel;
 import io.github.thebusybiscuit.slimefunluckyblocks.surprises.Surprise;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.Item.CustomItem;
+import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import me.mrCookieSlime.Slimefun.cscorelib2.skull.SkullItem;
 
 public final class ReapersSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Reapers";
+		return "收割者";
 	}
 
 	@Override
@@ -33,7 +33,7 @@ public final class ReapersSurprise implements Surprise {
 			zombie.getEquipment().setHelmet(SkullItem.fromBase64("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTkzN2FmMjYzMzI2ZTJiNDA5MDQyNzFiODMxYzNiMTc2ZWEyMWYwMTg2YmZhZjRlMTZlZWUxZTI4OWRkYWQ4In19fQ=="));
 			zombie.getEquipment().setHelmetDropChance(0F);
 			
-			zombie.getEquipment().setItemInMainHand(new CustomItem(Material.IRON_HOE, "&e&lLucky Hoe", new String[] {"DAMAGE_ALL-10", "LOOT_BONUS_MOBS-10", "FIRE_ASPECT-5", "DURABILITY-10"}, 0));
+			zombie.getEquipment().setItemInMainHand(new CustomItem(Material.IRON_HOE, "&e&l幸运锄头", new String[] {"DAMAGE_ALL-10", "LOOT_BONUS_MOBS-10", "FIRE_ASPECT-5", "DURABILITY-10"}));
 			zombie.getEquipment().setItemInMainHandDropChance(0F);
 			zombie.setCanPickupItems(false);
 			

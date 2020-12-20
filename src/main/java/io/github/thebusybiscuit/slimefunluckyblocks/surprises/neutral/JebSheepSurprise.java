@@ -14,13 +14,13 @@ public final class JebSheepSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "jeb Sheep";
+		return "领头羊";
 	}
 
 	@Override
 	public void activate(Random random, Player p, Location l) {
 		Sheep sheep = (Sheep) l.getWorld().spawnEntity(l, EntityType.SHEEP);
-		sheep.setCustomName("jeb_");
+		sheep.setCustomName("领头羊");
 		sheep.setCustomNameVisible(true);
 	}
 

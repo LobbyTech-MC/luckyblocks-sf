@@ -13,7 +13,7 @@ public final class ChargedCreeperSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Charged Creeper";
+		return "充能苦力怕";
 	}
 
 	@Override

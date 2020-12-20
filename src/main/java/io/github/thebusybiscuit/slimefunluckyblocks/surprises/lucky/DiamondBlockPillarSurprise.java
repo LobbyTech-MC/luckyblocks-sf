@@ -14,7 +14,7 @@ public final class DiamondBlockPillarSurprise implements Surprise {
 
     @Override
     public String getName() {
-        return "Stained Clay Pillar with Diamond Block on top";
+        return "彩色粘土柱，顶部有钻石块";
     }
 
     @Override

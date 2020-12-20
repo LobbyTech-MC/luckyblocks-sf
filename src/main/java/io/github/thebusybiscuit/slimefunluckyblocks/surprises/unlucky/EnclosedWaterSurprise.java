@@ -13,7 +13,7 @@ public final class EnclosedWaterSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Enclosed Water Pool";
+		return "封闭水池";
 	}
 
 	@Override
