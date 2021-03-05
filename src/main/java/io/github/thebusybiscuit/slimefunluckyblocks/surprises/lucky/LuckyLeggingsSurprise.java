@@ -4,27 +4,40 @@ import java.util.Random;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefunluckyblocks.surprises.LuckLevel;
 import io.github.thebusybiscuit.slimefunluckyblocks.surprises.Surprise;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 
 public final class LuckyLeggingsSurprise implements Surprise {
-	
-	@Override
-	public String getName() {
-		return "幸运护腿";
-	}
 
-	@Override
-	public void activate(Random random, Player p, Location l) {
-		l.getWorld().dropItemNaturally(l, new CustomItem(Material.DIAMOND_LEGGINGS, "&e&l幸运护腿", new String[] {"PROTECTION_ENVIRONMENTAL-10", "PROTECTION_PROJECTILE-10", "PROTECTION_EXPLOSIONS-10", "THORNS-10", "DURABILITY-10"}));
-	}
+    private final ItemStack leggings;
 
-	@Override
-	public LuckLevel getLuckLevel() {
-		return LuckLevel.LUCKY;
-	}
+    public LuckyLeggingsSurprise() {
+        leggings = new CustomItem(Material.DIAMOND_LEGGINGS, "&e&l幸运护腿");
+        leggings.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 10);
+        leggings.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 10);
+        leggings.addUnsafeEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 5);
+        leggings.addUnsafeEnchantment(Enchantment.THORNS, 10);
+        leggings.addUnsafeEnchantment(Enchantment.DURABILITY, 10);
+    }
+
+    @Override
+    public String getName() {
+        return "幸运护腿";
+    }
+
+    @Override
+    public void activate(Random random, Player p, Location l) {
+        l.getWorld().dropItemNaturally(l, leggings.clone());
+    }
+
+    @Override
+    public LuckLevel getLuckLevel() {
+        return LuckLevel.LUCKY;
+    }
 
 }
