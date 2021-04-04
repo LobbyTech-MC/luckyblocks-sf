@@ -26,7 +26,7 @@ public final class LuckySwordSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Lucky Sword";
+		return "幸运剑";
 	}
 
 	@Override
