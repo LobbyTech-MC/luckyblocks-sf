@@ -117,9 +117,9 @@ public class SlimefunLuckyBlocks extends JavaPlugin implements SlimefunAddon {
 
         Category category = new Category(new NamespacedKey(this, "lucky_blocks"), new CustomItem(SkullItem.fromHash(TEXTURE), "&r幸运方块"));
 
-        SlimefunItemStack luckyBlock = new SlimefunItemStack("LUCKY_BLOCK", TEXTURE, "&r随机幸运方块", "&7幸运度: &r随机");
-        SlimefunItemStack veryLuckyBlock = new SlimefunItemStack("LUCKY_BLOCK_LUCKY", TEXTURE, "&r幸运方块", "&7幸运度: &a好");
-        SlimefunItemStack veryUnluckyBlock = new SlimefunItemStack("LUCKY_BLOCK_UNLUCKY", TEXTURE, "&r霉运方块", "&7幸运度: &c坏");
+        SlimefunItemStack luckyBlock = new SlimefunItemStack("LUCKY_BLOCK", TEXTURE, "&f幸运方块", "&7幸运度: &f0");
+        SlimefunItemStack veryLuckyBlock = new SlimefunItemStack("LUCKY_BLOCK_LUCKY", TEXTURE, "&f非常幸运的方块", "&7幸运度: &a+80");
+        SlimefunItemStack veryUnluckyBlock = new SlimefunItemStack("LUCKY_BLOCK_UNLUCKY", TEXTURE, "&f非常霉运的方块", "&7幸运度: &c-80");
         SlimefunItemStack pandorasBox = new SlimefunItemStack("PANDORAS_BOX", "86c7dde512871bd607b77e6635ad39f44f2d5b4729e60273f1b14fba9a86a", "&5潘多拉魔盒", "&7幸运度: &c&o随机");
 
         // @formatter:off
