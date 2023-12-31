@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.thebusybiscuit</groupId>
   <artifactId>SlimefunLuckyBlocks</artifactId>
-  <version>UNOFFICIAL</version>
+  <version>zh_CN(by LobbyTech)</version>
   <build>
     <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
     <defaultGoal>clean package</defaultGoal>
@@ -22,7 +22,7 @@
         </includes>
       </resource>
     </resources>
-    <finalName>${project.name} v${project.version}</finalName>
+    <finalName>[粘液科技]${project.name} ${project.version}</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
@@ -76,13 +76,13 @@
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
-      <version>1.16.5-R0.1-SNAPSHOT</version>
+      <version>1.20-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.github.TheBusyBiscuit</groupId>
       <artifactId>Slimefun4</artifactId>
-      <version>RC-27</version>
+      <version>RC-35</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
