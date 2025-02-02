@@ -8,9 +8,9 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefunluckyblocks.surprises.LuckLevel;
 import io.github.thebusybiscuit.slimefunluckyblocks.surprises.Surprise;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 
 public final class LuckyPickaxeSurprise implements Surprise {
 	

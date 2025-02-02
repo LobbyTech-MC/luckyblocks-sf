@@ -13,11 +13,11 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
-import io.github.thebusybiscuit.slimefunluckyblocks.surprises.LuckLevel;
-import io.github.thebusybiscuit.slimefunluckyblocks.surprises.Surprise;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerHead;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.skins.PlayerSkin;
+import io.github.thebusybiscuit.slimefunluckyblocks.surprises.LuckLevel;
+import io.github.thebusybiscuit.slimefunluckyblocks.surprises.Surprise;
 
 public final class ReapersSurprise implements Surprise {
 
