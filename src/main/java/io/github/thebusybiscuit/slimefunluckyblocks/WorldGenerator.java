@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
+import org.bukkit.Bukkit;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.event.EventHandler;
@@ -39,7 +40,10 @@ public class WorldGenerator implements Listener {
 
             Block current = e.getWorld().getBlockAt(x, y, z);
             if (!current.getType().isSolid() && current.getRelative(BlockFace.DOWN).getType().isSolid()) {
-                plugin.spawnLuckyBlock(current);
+            	Bukkit.getScheduler().runTask(plugin, () -> {
+            		plugin.spawnLuckyBlock(current);
+            	});
+                
             }
         }
     }

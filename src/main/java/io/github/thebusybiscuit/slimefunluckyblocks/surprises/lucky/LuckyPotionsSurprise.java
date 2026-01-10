@@ -12,6 +12,7 @@ import io.github.thebusybiscuit.slimefunluckyblocks.SlimefunLuckyBlocks;
 import io.github.thebusybiscuit.slimefunluckyblocks.surprises.LuckLevel;
 import io.github.thebusybiscuit.slimefunluckyblocks.surprises.Surprise;
 
+
 public final class LuckyPotionsSurprise implements Surprise {
 	
 	@Override

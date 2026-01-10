@@ -8,6 +8,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.logging.Level;
 
 import org.bstats.bukkit.Metrics;
+import org.bukkit.Bukkit;
 import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -338,13 +339,19 @@ public class SlimefunLuckyBlocks extends JavaPlugin implements SlimefunAddon {
             }
         });
 
-        b.setBlockData(data);
-        PlayerHead.setSkin(b, PlayerSkin.fromHashCode(TEXTURE), true);
-        BlockStorage.store(b, "LUCKY_BLOCK");
+        Bukkit.getScheduler().runTask(this.getJavaPlugin(), () -> {
+        	b.setBlockData(data);
+            if (b.getType() != Material.PLAYER_HEAD) {
+            	getLogger().log(Level.WARNING, "failed to spawn lucky block at {0} {1} {2} - {3}", new Object[] { b.getX(), b.getY(), b.getZ(), b.getWorld().getName() });
+        		return;
+        	}
+            PlayerHead.setSkin(b, PlayerSkin.fromHashCode(TEXTURE), true);
+            BlockStorage.store(b, "LUCKY_BLOCK");
 
-        if (getCfg().getBoolean("debug")) {
-            getLogger().log(Level.INFO, "spawned lucky block at {0} {1} {2} - {3}", new Object[] { b.getX(), b.getY(), b.getZ(), b.getWorld().getName() });
-        }
+            if (getCfg().getBoolean("debug")) {
+                getLogger().log(Level.INFO, "spawned lucky block at {0} {1} {2} - {3}", new Object[] { b.getX(), b.getY(), b.getZ(), b.getWorld().getName() });
+            }
+        });
     }
 
     public Config getCfg() {
